@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="960" height="540" viewBox="0 0 960 540" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .text { font: 14px sans-serif; }
+    .label { fill: #000; }
+    .box { fill: #e0e0e0; stroke: #000; stroke-width: 1.5; }
+    .line { stroke: #000; stroke-width: 2; marker-end: url(#arrow); }
+  </style>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#000"/>
+    </marker>
+  </defs>
+
+  <!-- Blocks -->
+  <rect class="box" x="50" y="50" width="200" height="50"/>
+  <text class="text label" x="65" y="80">Piezoelectric Layer (PZT)</text>
+
+  <rect class="box" x="50" y="130" width="200" height="50"/>
+  <text class="text label" x="60" y="160">Thermoelectric Layer (Bi₂Te₃)</text>
+
+  <rect class="box" x="300" y="90" width="200" height="60"/>
+  <text class="text label" x="330" y="125">Full-Wave Bridge + Rectifiers</text>
+
+  <rect class="box" x="550" y="90" width="200" height="60"/>
+  <text class="text label" x="570" y="125">Supercap Bank (100F 2.7V x 3)</text>
+
+  <rect class="box" x="800" y="90" width="120" height="60"/>
+  <text class="text label" x="820" y="125">DC Buck Regulator (5V)</text>
+
+  <!-- Connections -->
+  <line class="line" x1="250" y1="75" x2="300" y2="120"/>
+  <line class="line" x1="250" y1="155" x2="300" y2="120"/>
+
+  <line class="line" x1="500" y1="120" x2="550" y2="120"/>
+  <line class="line" x1="750" y1="120" x2="800" y2="120"/>
+
+  <!-- Output -->
+  <text class="text label" x="830" y="170">DC Out (USB / XT60)</text>
+  <line class="line" x1="860" y1="150" x2="920" y2="150"/>
+</svg>
